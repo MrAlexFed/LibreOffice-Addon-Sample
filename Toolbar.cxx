@@ -17,10 +17,7 @@ void SAL_CALL Toolbar::dispatch(const css::util::URL& url, const css::uno::Seque
         auto dialogProvider = css::awt::DialogProvider::createWithModel(context_, frame_->getController()->getModel());
         auto dialogInterface = dialogProvider->createDialog("vnd.sun.star.extension://org.apache.openoffice.framework.SimpleAddon/MyDialog.xdl");
         auto dialog = css::uno::Reference<css::awt::XUnoControlDialog> {dialogInterface, css::uno::UNO_QUERY_THROW};
-
-        auto run = [dialog](){ dialog->execute(); };
-        std::thread thr(run);
-        thr.detach();
+        dialog->execute();
     }
 }
 
