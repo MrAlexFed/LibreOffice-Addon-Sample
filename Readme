@@ -1,0 +1,3 @@
+CMakeLists configuration:
+Make sure OFFICE_PROGRAM_PATH variable set correct to LibreOffice directory in root CMakeLists
+Make sure LibreOfficeSDK_DIR variable set correct to LibreOffice sdk directory in FindLibreOfficeSDK.cmake file

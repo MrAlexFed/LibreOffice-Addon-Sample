@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns="http://openoffice.org/2010/uno-components">
+    <component loader="com.sun.star.loader.SharedLibrary"
+                    uri="${EXTENSION_PLATFORM}/addon.uno.dll">
+        <implementation name="cybersecurity.irm.libreoffice.addon.comp.framework.ProtocolHandler.impl">
+            <service name="com.sun.star.frame.ProtocolHandler"/>
+        </implementation>
+    </component>
+</components>
